@@ -102,16 +102,19 @@ app/src/main/res/
 > （`EmulatedCamera3_QemuSensor`）在按下快门后会卡住，连系统相机应用单独使用也卡住，
 > 属于模拟器相机 HAL 的问题，与本项目代码无关。请用真机运行补一张“照片已显示”的截图。
 
-## 六、提交到 GitHub
+## 六、代码仓库
 
-仓库已初始化并提交过，remote 也已配好，直接推送即可：
+项目已推送到 GitHub：`https://github.com/zyongquan/Android_MultiActivity.git`（`main` 分支）。
+
+后续本地有改动时，照常提交推送即可：
 
 ```bash
 cd D:\Android\MultiActivity
-git push -u origin master
+git add -A
+git commit -m "说明本次改动"
+git push
 ```
 
-远程地址是 `https://github.com/zyongquan/Android_MultiActivity.git`。
 `local.properties`（本机 SDK 路径）和 `build/` 已在 `.gitignore` 中排除，不会提交。
 
 ## 七、实验报告
@@ -138,4 +141,4 @@ git push -u origin master
 - [x] 无任何硬编码界面字符串（Lint 无 HardcodedText 警告）
 - [x] 构建通过（`assembleDebug` BUILD SUCCESSFUL）
 - [x] 报告已生成（13 页，图1~图9 均为本机运行截图）
-- [ ] `git push` 到 GitHub
+- [x] 已推送到 GitHub（`main` 分支）

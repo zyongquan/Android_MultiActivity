@@ -102,15 +102,40 @@ app/src/main/res/
 > （`EmulatedCamera3_QemuSensor`）在按下快门后会卡住，连系统相机应用单独使用也卡住，
 > 属于模拟器相机 HAL 的问题，与本项目代码无关。请用真机运行补一张“照片已显示”的截图。
 
-## 六、提交到 Gitee
+## 六、提交到 GitHub
+
+仓库已初始化并提交过，remote 也已配好，直接推送即可：
 
 ```bash
-cd MultiActivity
-git init
-git add .
-git commit -m "实验三 多Activity"
-git remote add origin https://gitee.com/<你的账号>/<仓库名>.git
+cd D:\Android\MultiActivity
 git push -u origin master
 ```
 
-`local.properties`（本机 SDK 路径）已在 `.gitignore` 中排除，不需要提交。
+远程地址是 `https://github.com/zyongquan/Android_MultiActivity.git`。
+`local.properties`（本机 SDK 路径）和 `build/` 已在 `.gitignore` 中排除，不会提交。
+
+## 七、实验报告
+
+`实验三_多Activity-周勇权2024180750.docx` 已按学院模板填好，共 13 页包含：
+
+- 封面：姓名周勇权、学号2024180750、GitHub 网址
+- 实验环境与工程结构
+- 主要代码及说明（清单文件、4 个任务的关键代码、生命周期日志）
+- 作品运行截图 10 张（图1~图10，均为本机模拟器实际运行截图）
+- 实验结果的分析与评价（4 个任务的结论、规范性检查、遇到的问题、不足与改进）
+
+**唯一需要你手动补的一张图**：图10（任务3 拍照成功后照片显示）。本机模拟器的虚拟相机
+按快门后会卡死（系统相机单独打开也一样），无法产出这张截图，报告里先放了一张占位图。
+用真机运行、拍照成功后，**右键占位图 → 更改图片** 换成手机截图即可，其余内容不用改。
+
+## 八、检查清单（提交前自查）
+
+- [x] 5 个 Activity 都已注册，标题为「周勇权2024180750」
+- [x] 任务1 正向传参（String/int/boolean 三种类型）
+- [x] 任务2 `startActivityForResult` + `setResult` 返回数据，取消分支也处理
+- [x] 任务3 隐式 Intent `ACTION_IMAGE_CAPTURE` + FileProvider + 运行时权限 + 降采样显示
+- [x] 任务4 秒表横竖屏连续计时（`elapsedRealtime` + `onSaveInstanceState`）
+- [x] 无任何硬编码界面字符串（Lint 无 HardcodedText 警告）
+- [x] 构建通过（`assembleDebug` BUILD SUCCESSFUL）
+- [ ] 真机补拍图10 并替换占位图
+- [ ] `git push` 到 GitHub

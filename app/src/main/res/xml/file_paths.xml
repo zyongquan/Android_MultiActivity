@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 照片保存到 getExternalFilesDir(Pictures) 对应以下目录 -->
+    <external-files-path
+        name="external_pictures"
+        path="Pictures/" />
+    <!-- 兜底：应用私有缓存与文件目录 -->
+    <cache-path
+        name="cache_photos"
+        path="." />
+    <files-path
+        name="internal_photos"
+        path="." />
+</paths>

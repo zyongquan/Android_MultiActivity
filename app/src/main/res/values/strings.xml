@@ -1,0 +1,64 @@
+<resources>
+    <!-- 应用标题：提交要求(1)「APP 应用标题为自己的姓名+学号」 -->
+    <string name="app_name">周勇权2024180750</string>
+    <!-- 任务1 演示用的传参内容，同样不写死在代码里 -->
+    <string name="author_name">周勇权</string>
+    <string name="author_student_id">2024180750</string>
+
+    <!-- 各页面 ActionBar 副标题（标题固定为 app_name，副标题说明当前任务） -->
+    <string name="subtitle_main">实验三 · 多 Activity</string>
+    <string name="subtitle_forward">任务1 · 正向传参</string>
+    <string name="subtitle_return">任务2 · 返回数据</string>
+    <string name="subtitle_camera">任务3 · 相机拍照</string>
+    <string name="subtitle_stopwatch">任务4 · 秒表计时</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">实验三 · 多 Activity</string>
+    <string name="main_subtitle">请选择要演示的任务：</string>
+    <string name="main_btn_task1">任务1：正向传参</string>
+    <string name="main_btn_task2">任务2：返回数据</string>
+    <string name="main_btn_task3">任务3：相机拍照</string>
+    <string name="main_btn_task4">任务4：秒表计时</string>
+    <string name="main_result_label">返回结果：</string>
+    <string name="main_result_empty">（暂无返回数据）</string>
+    <string name="main_result_format">收到「任务2」返回的数据：%1$s</string>
+    <string name="main_result_cancelled">未返回数据（在任务2页面按了返回键）</string>
+    <string name="main_footer">提示：Activity 生命周期日志可在 Logcat 中查看</string>
+
+    <!-- 任务1 正向传参 -->
+    <string name="forward_tip">下面这些内容由 MainActivity 通过 Intent.putExtra() 正向传递，本页面在 onCreate() 中用 getIntent() 取出并显示。</string>
+    <string name="forward_label_name">姓名</string>
+    <string name="forward_label_student_id">学号</string>
+    <string name="forward_label_age">年龄</string>
+    <string name="forward_label_in_school">是否在校</string>
+    <string name="forward_value_empty">（未收到该参数）</string>
+    <string name="forward_age_format">%1$d 岁</string>
+    <string name="forward_in_school_yes">是</string>
+    <string name="forward_in_school_no">否</string>
+    <string name="btn_back_to_main">返回主界面</string>
+
+    <!-- 任务2 返回数据 -->
+    <string name="return_tip">在下面输入内容，点击“确认返回”后由 setResult() 把数据带回 MainActivity 显示；若直接按返回键，则回传 RESULT_CANCELED。</string>
+    <string name="return_input_hint">请输入要返回给主界面的内容</string>
+    <string name="btn_confirm_return">确认返回</string>
+    <string name="return_empty_toast">内容不能为空，请先输入内容</string>
+
+    <!-- 任务3 相机拍照 -->
+    <string name="btn_take_photo">拍照</string>
+    <string name="camera_preview_label">照片预览：</string>
+    <string name="camera_tip">采用隐式 Intent（MediaStore.ACTION_IMAGE_CAPTURE）调起系统相机，照片经 FileProvider 保存为原图后在此显示。</string>
+    <string name="camera_no_app">未找到可用的相机应用</string>
+    <string name="camera_permission_denied">未获得相机权限，无法拍照</string>
+    <string name="camera_cancelled">已取消拍照</string>
+    <string name="camera_failed">拍照失败，请重试</string>
+    <string name="camera_create_file_failed">创建照片文件失败</string>
+    <string name="cd_taken_photo">拍摄的照片预览</string>
+
+    <!-- 任务4 秒表 -->
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_reset">重置</string>
+    <string name="stopwatch_time_zero">00:00.0</string>
+    <string name="stopwatch_time_format">%1$02d:%2$02d.%3$d</string>
+    <string name="stopwatch_tip">旋转屏幕（横屏 / 竖屏切换）后计时仍然连续，不会清零。</string>
+</resources>

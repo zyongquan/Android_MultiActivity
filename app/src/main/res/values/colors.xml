@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题色 -->
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+
+    <!-- 页面与卡片 -->
+    <color name="screen_bg">#FFF5F6FA</color>
+    <color name="card_bg">#FFFFFFFF</color>
+    <color name="card_stroke">#FFE3E6F0</color>
+    <color name="edit_bg">#FFF7F8FC</color>
+
+    <!-- 文字 -->
+    <color name="text_primary">#FF1F2430</color>
+    <color name="text_secondary">#FF6B7280</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 4 个任务按钮各自的配色 -->
+    <color name="task1">#FF5C6BC0</color>
+    <color name="task2">#FF26A69A</color>
+    <color name="task3">#FFEF6C00</color>
+    <color name="task4">#FF8E24AA</color>
+    <color name="task_neutral">#FF78909C</color>
+</resources>
